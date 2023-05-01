@@ -1,0 +1,210 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.5s ease-out;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: hsl(0, 0%, 98%) !important;
+    color: black !important;
+}
+
+.dark-mode button {
+    background-image: url("/img/night-mode.png");
+}
+
+.dark-mode a {
+    transition: all 0.2s ease-in-out !important;
+    color: black !important;
+}
+
+.dark-mode a:hover {
+    color: #77b52b !important;
+}
+
+.alt1 {
+    background: url("/img/p1.jpg") !important;
+}
+
+.alt1 h2 {
+    color: black !important;
+    border-color: black;
+}
+
+.alt2 {
+    background: url("/img/p2.jpg") !important;
+}
+
+.alt2 h2 {
+    color: black !important;
+    border-color: black;
+}
+
+.alt3 {
+    background: url("/img/p3.jpg") !important;
+}
+
+.alt3 h2 {
+    color: black !important;
+    border-color: black;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #020202;
+    z-index: 1;
+}
+  
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f5b1bd;
+    text-decoration: none;
+}
+  
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    border-radius: 20px;
+    background-color: transparent;
+    background-image: url("/img/brightness.png");
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+    border: none;
+    cursor: pointer;
+}
+  
+.navbar li{
+    margin-right: 20px;
+}
+  
+.navbar li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #f9f9f9;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out !important;
+}
+  
+.navbar li a:hover {
+    color: #b6c65a;
+}
+/* Navbar Ends */
+
+/* Responsiveness */
+@media screen and (max-width: 500px) {
+    .navbar {
+        position: relative;
+    }
+
+    .navbar-brand {
+        padding-bottom: 20px;
+    }
+
+    .navbar-container {
+        display: block;
+    }
+
+    .navbar li {
+        padding: 3px;
+    }
+
+    .navbar-menu {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .parallax {
+        height: 170px !important;
+    }
+
+    .heading {
+        font-size: 17px !important;
+        width: 150px !important;
+        height: 20px !important;
+        border: 2px solid black !important;
+    }
+
+    .para-1 {
+        font-size: 15px !important;
+    }
+
+    .para-2 {
+        font-size: 12px !important;
+    }
+}
+
+h2 {
+    font-size: 30px;
+    width: 300px;
+    height: 32px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: 5px white;
+    border-style: double;
+}
+
+.parallax-1 {
+    background: url("/img/dark-1.jpg");
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed !important;
+    background-size: 100% 100% !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-2 {
+    background: url("/img/dark-2.jpg");
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed !important;
+    background-size: 100% 100% !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-3 {
+    background: url("/img/dark-3.jpg");
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed !important;
+    background-size: 100% 100% !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.para {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    font-family: Verdana;
+    background-color: black;
+    color: white;
+}
+
