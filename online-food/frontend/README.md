@@ -1,3 +1,7 @@
+# Cloud Kitchen
+Front-end of an Online Food Delivering web application made using React.js
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
