@@ -1,6 +1,4 @@
 import React, { useEffect, useState} from "react";
-// import starters from "./data/starters";
-// import mainCourse from "./data/mainCourse";
 import Card from "./Card";
 import axios from 'axios';
 
