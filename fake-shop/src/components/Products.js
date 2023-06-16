@@ -65,10 +65,7 @@ function Products() {
                             <Skeleton height={400} width={"100%"}/>
                         </div>  
                     </div>
-
                 </div>
-
-
             </>
         )
     }
