@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Skeleton from 'react-loading-skeleton';
-import { NavLink } from 'react-router-dom';
+import { useParams, NavLink, useNavigate } from 'react-router-dom';
 
 function Products() {
-
+    const navigate = useNavigate();
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(false);
     const [filter, setFilter] = useState(data);
@@ -81,13 +81,19 @@ function Products() {
                 <div className="col-md-3 my-3">
 
                     <div className="position-sticky" style={{ top: "100px" }}>
-                        <button className="btn btn-outline-dark m-1 btn-sm" onClick={() => setFilter(data)}>All</button>
-                        <button className="btn btn-outline-dark m-1 btn-sm" onClick={() => filterProduct("women's clothing")}>Women's Clothing</button>
-                        <button className="btn btn-outline-dark m-1 btn-sm" onClick={() => filterProduct("men's clothing")}>Men's Clothing</button>
-                        <button className="btn btn-outline-dark m-1 btn-sm" onClick={() => filterProduct("jewelery")}>Jewelery</button>
-                        <button className="btn btn-outline-dark m-1 btn-sm" onClick={() => filterProduct("electronics")}>Electronics</button>
+                        <div className="row justify-content-center">
+                            <div className="col-12">
+                                <button className="btn btn-outline-dark m-1 btn-sm" onClick={() => setFilter(data)}>All</button>
+                                <button className="btn btn-outline-dark m-1 btn-sm" onClick={() => filterProduct("women's clothing")}>Women's Clothing</button>
+                                <button className="btn btn-outline-dark m-1 btn-sm" onClick={() => filterProduct("men's clothing")}>Men's Clothing</button>
+                                <button className="btn btn-outline-dark m-1 btn-sm" onClick={() => filterProduct("jewelry")}>Jewelry</button>
+                                <button className="btn btn-outline-dark m-1 btn-sm" onClick={() => filterProduct("electronics")}>Electronics</button>
+                            </div>
+                            <div className="col-12 text">
+                                <button className="btn btn-outline-success m-1 btn-sm mt-4" onClick={() => navigate('/add')}>Add Item</button>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
                 <div className="col-md-9 py-md-3">
